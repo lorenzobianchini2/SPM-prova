@@ -1,0 +1,32 @@
+<link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+<div id="form">
+  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+  
+    <h1>Login</h1>
+
+      <h5 *ngIf="success">Your form is valid!</h5>
+      <label>
+        <div class="inputWithIcon">
+          <input type="text" formControlName="username" placeholder="Username or email address">
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          <div *ngIf="submitted && messageForm.controls.username.errors" class="error">
+            <div *ngIf="messageForm.controls.username.errors.required">This field is required</div>
+          </div>
+        </div>
+      </label>
+    
+      <label>
+        <div class="inputWithIcon">
+          <input type="password" formControlName="password" placeholder="Password">
+          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+          <div *ngIf="submitted && messageForm.controls.password.errors" class="error">
+            <div *ngIf="messageForm.controls.password.errors.required">This field is required</div>
+          </div>
+       </div>
+      </label>
+
+      <input type="submit" value="Login" class="cta">
+    
+    </form>
+</div>

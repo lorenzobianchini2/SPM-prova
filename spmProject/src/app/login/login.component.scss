@@ -1,0 +1,162 @@
+
+h1 {
+    margin-left: 90px;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-left: 90px;
+    font-size: .9em;
+}
+
+::placeholder { 
+    color: #b1b1b1;
+    opacity: 1; 
+}
+
+label {
+    display: block;
+ 
+    
+    input{
+        display: block;
+        width: 60%;
+        height: 10px;
+        margin : 0 auto;
+        padding: 1em;
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 20px;
+        border-color: #c7c8c9;
+        padding-left: 40px;
+
+    }
+
+    input:focus {
+        border-color: dodgerblue;
+        transition: 0.8s;
+    }
+    
+    .inputWithIcon {
+        position: relative;
+      }
+      
+      .inputWithIcon i {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        padding: 9px 8px;
+        color: #aaa;
+        margin-left: 70px;
+        margin-top: -6px;
+      }
+      
+      .inputWithIcon input[type="text"]:focus + i {
+          color: dodgerblue;
+          transition: 0.8s;
+        }
+
+        .inputWithIcon input[type="password"]:focus + i {
+            color: dodgerblue;
+            transition: 0.8s;
+          }
+    
+    .error {
+        margin-top: -20px;
+        background: yellow;
+        padding: .5em;
+        display: inline-block;
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+}
+
+.cta {
+    display: block;
+    background: #2672ff;
+    margin : 0 auto;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.8em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    width: 65.5%;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+input[type="submit"]:focus {
+    color: blue;
+}
+
+.results {
+    margin-top: 50px;
+
+    strong {
+        display: block;
+    }
+    span {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+
+form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #eff4ff;
+    border-radius: 20px;
+    width: 500px;
+    margin : 0 auto;
+    margin-top: 100px;
+    border-width: 1px;
+    border-color: rgb(180, 200, 255);
+    border-style: solid;
+}
+
+#form {
+    margin-top: 25px;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
